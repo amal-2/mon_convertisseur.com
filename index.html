@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Mon-Convertisseur </title>
+        <link rel="icon" href="/icon.png" tupe="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+        /************** Fonction permettant de convertir décimal en binaire ************/
+function DecimalToBinary() {
+    var temp =parseInt (document.getElementById('decimal1').value).toString(2);
+    document.getElementById('binary1').value = temp;
+    }
+
+/************** Fonction permettant de convertir binaire en décimal ************/
+function BinaryToDecimal() {
+    var temp = parseInt(document.getElementById('binary2').value,2);
+    document.getElementById('decimal2').value = temp;
+    }
+
+/************** Fonction permettant de convertir décimal en octal ************/
+function DecimalToOctal (){
+    var temp =parseInt (document.getElementById('decimal3').value).toString(8);
+    document.getElementById('octal1').value = temp;
+}
+
+/************** Fonction permettant de convertir décimal en hexadécimal ************/
+function DecimalToHexadecimal(){
+    var temp =parseInt (document.getElementById('decimal4').value,10).toString(16);
+    document.getElementById('hexadecimal1').value = temp;
+}
+
+/************** Fonction permettant de convertir octal en décimal ************/
+function OctalToDecimal(){
+    var temp =parseInt (document.getElementById('octal2').value,8);
+    document.getElementById('decimal5').value = temp;
+}
+
+/************** Fonction permettant de convertir hexadécimal en décimal ************/
+function HexadecimalToDecimal(){
+    var temp =parseInt (document.getElementById('hexadecimal2').value,16).toString(10);
+    document.getElementById('decimal6').value = temp;
+}
+
+        </script>
+    </head>
+    <body>
+        <h1>Convertisseur décimal/binaire, octal, hexadécimal</h1>
+        <p>
+            <h3>REMARQUE :</h3>
+            <ul>
+                <li> Pour une conversion octal binaire, passer par le décimal </li>
+                <li> Pour une conversion héxadécimal binaire, passer par le décimal</li>
+                <li> Pour une conversion héxadécimal octal, passer par le décimal</li>
+                <br>
+            </ul>
+        </p>
+        
+        <form action="">
+            <fieldset>
+                <legend>Convertir :</legend>
+                <p>
+                    <label for="decimal">Décimal :</label>
+                    <input type="number" id="decimal1" name="decimal" >
+                    <input class="button" type="button" value="en" onclick="DecimalToBinary ()">
+                    <label for="binary">Binaire :</label>
+                    <input type="number" id="binary1" name="binary" >
+                    
+                </p>
+
+                <p>
+                    <label for="binary">Binaire :</label>
+                    <input type="number" id="binary2" name="binary">
+                    <input class="button" type="button" value="en" onclick="BinaryToDecimal()">
+                    <label for="decimal">Décimal :</label>
+                    <input type="number" id="decimal2" name="decimal" >
+                </p>
+                
+                <p>
+                    <label for="decimal">Décimal :</label>
+                    <input type="number" id="decimal3" name="decimal" >
+                    <input class="button" type="button" value="en" onclick="DecimalToOctal ()">
+                    <label for="octal">Octal :</label>
+                    <input type="number" id="octal1" name="Octal" >
+                    
+                </p>
+                
+                <p>
+                    <label for="decimal">Décimal :</label>
+                    <input type="text" id="decimal4" name="decimal" >
+                    <input class="button" type="button" value="en" onclick="DecimalToHexadecimal()">
+                    <label for="hexadecimal">Hexadécimal  :</label>
+                    <input type="text" id="hexadecimal1" name="hexadecimal" >
+                    
+                </p>
+                
+                <p>
+                    <label for="octal">Octal :</label>
+                    <input type="number" id="octal2" name="octal">
+                    <input class="button" type="button" value="en" onclick="OctalToDecimal()">
+                    <label for="decimal">Décimal :</label>
+                    <input type="number" id="decimal5" name="decimal" >
+                </p>
+                
+                <p>
+                    <label for="binary">Héxadécimal :</label>
+                    <input type="text" id="hexadecimal2" name="hexadecimal">
+                    <input class="button" type="button" value="en" onclick="HexadecimalToDecimal()">
+                    <label for="decimal">Décimal :</label>
+                    <input type="number" id="decimal6" name="decimal" >
+                </p>
+
+            </fieldset>
+        
+        </form>
+        <hr>
+        <p class="footer">copyright © 2020-2021 | AMAL Oumaima </p>
+
+    </body>    
+        
+</html>

@@ -1,0 +1,68 @@
+body {
+	color:#000;
+	background-color:rgb(195, 193, 218);
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	max-width:60em;
+	margin:25px auto;
+	margin: 25px 180px 25px;
+	padding:1em 1em 1em;
+    border:3px solid #d65eb2;
+    
+}
+
+h1 {
+	font-family: 'Cooper black';
+	text-align: center;
+	font-size:1.7em;
+	padding: .3em .3em .3em;
+	border-bottom:medium solid #d65eb2;
+	margin: 1em 1em 1em;
+}
+
+h3{
+	font-family: 'Cooper black';
+	color: #f30808;
+	text-decoration: underline;
+}
+
+li{
+	font-family: cursive;
+}
+
+legend{
+    font-family: 'Cooper black';
+    text-align: left;
+    font-size:20px;
+	text-decoration: underline;
+}
+
+label {
+	display: inline-block;
+	min-width: 15%;
+	text-align: right;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding-left: 1px;
+	padding-right: 1px;
+	font-family: cursive;
+}
+
+
+.button{
+	font-family: 'Cooper black';
+	margin-left: 4.5em;
+	margin-right: 4.5em;
+	border-radius: 50%
+}
+
+.button:hover {
+	background-color:grey; /* Green */
+	color:black;
+  }
+
+.footer{
+	margin: 2px 2px 2px;
+	padding: 1px 1px 1px;
+	text-align: center;
+	font-family:'Cooper black';
+}
